@@ -1,0 +1,113 @@
+.seemore {
+  background-color: #0d0d0d;
+  color: white;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.seemore-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Poster */
+.poster img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+}
+
+/* Info box */
+.info {
+  flex: 2;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f5c518; /* IMDb yellow */
+}
+
+.runtime-genre {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.info p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #ccc;
+}
+
+.info p span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.rating {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #f5c518;
+  font-weight: bold;
+}
+
+/* 📱 Tablet */
+@media (max-width: 900px) {
+  .seemore-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .poster img {
+    width: 280px;
+    height: 400px;
+  }
+
+  .info {
+    width: 90%;
+    text-align: center;
+  }
+
+  .runtime-genre {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .poster img {
+    width: 220px;
+    height: 320px;
+  }
+
+  .info h1 {
+    font-size: 24px;
+  }
+
+  .info p {
+    font-size: 16px;
+  }
+
+  .rating {
+    font-size: 18px;
+  }
+}
